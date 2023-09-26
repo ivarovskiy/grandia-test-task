@@ -1,0 +1,17 @@
+.uploadContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.uploadTitle {
+    text-align: center;
+}
+
+.uploadButton {
+    width: 40vw;
+    height: 50px; 
+}
