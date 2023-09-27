@@ -28,7 +28,7 @@ const App = () => {
       const bubblesContainer = document.querySelector('.bubbles')
 
       if (bubblesContainer) {
-        for (let i = 0; i < 256; i++) {
+        for (let i = 0; i < 156; i++) {
           const bubble = document.createElement('div')
           bubble.className = 'bubble'
 

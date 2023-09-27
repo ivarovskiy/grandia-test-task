@@ -1,5 +1,5 @@
 import React from 'react'
-import { Input, Button } from 'antd'
+import { Input, Button, Form } from 'antd'
 import { FireOutlined, FireFilled } from '@ant-design/icons'
 import { Controller, useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
@@ -58,33 +58,32 @@ const IpLookup: React.FC<Props> = ({ updateIpInfo }) => {
   return (
     <div>
       <h1>Завантаження інформації про IP</h1>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <Form onFinish={handleSubmit(onSubmit)}>
         <Controller
           name='ipAddress'
           control={control}
-          defaultValue=''
           render={({ field }) => (
-            <Input
-              {...field}
-              value={field.value}
-              status={errors.ipAddress ? 'error' : ''}
-              suffix={
-                <Button
-                  ghost
-                  type='text'
-                  size='large'
-                  icon={errors.ipAddress ? buttonOutlined : buttonFilled}
-                  htmlType='submit'
-                >
-                  Submit
-                </Button>
-              }
-              placeholder='xxx.xxx.xxx.xxx'
-            />
+            <Form.Item help={errors.ipAddress?.message} validateStatus={errors.ipAddress && 'error'}>
+              <Input
+                {...field}
+                status={errors.ipAddress ? 'error' : ''}
+                suffix={
+                  <Button
+                    ghost
+                    type='text'
+                    size='large'
+                    icon={errors.ipAddress ? buttonOutlined : buttonFilled}
+                    htmlType='submit'
+                  >
+                    Submit
+                  </Button>
+                }
+                placeholder='xxx.xxx.xxx.xxx'
+              />{' '}
+            </Form.Item>
           )}
         />
-        <p className={styles.error}>{errors.ipAddress?.message}</p>
-      </form>
+      </Form>
     </div>
   )
 }
