@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/grandia-test-task/static/css/main.599494d8.css",
-    "main.js": "/grandia-test-task/static/js/main.ed7b848f.js",
+    "main.css": "/grandia-test-task/static/css/main.2e02b26f.css",
+    "main.js": "/grandia-test-task/static/js/main.156665ac.js",
     "static/js/787.6fd3cc83.chunk.js": "/grandia-test-task/static/js/787.6fd3cc83.chunk.js",
     "index.html": "/grandia-test-task/index.html",
-    "main.599494d8.css.map": "/grandia-test-task/static/css/main.599494d8.css.map",
-    "main.ed7b848f.js.map": "/grandia-test-task/static/js/main.ed7b848f.js.map",
+    "main.2e02b26f.css.map": "/grandia-test-task/static/css/main.2e02b26f.css.map",
+    "main.156665ac.js.map": "/grandia-test-task/static/js/main.156665ac.js.map",
     "787.6fd3cc83.chunk.js.map": "/grandia-test-task/static/js/787.6fd3cc83.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.599494d8.css",
-    "static/js/main.ed7b848f.js"
+    "static/css/main.2e02b26f.css",
+    "static/js/main.156665ac.js"
   ]
 }
